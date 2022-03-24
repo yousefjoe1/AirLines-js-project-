@@ -1,0 +1,126 @@
+body {
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #ffffff;
+}
+
+.logo img {
+  margin: 19px 0px 19px 16px;
+}
+
+.title {
+  font-family: "Helvetica Neue", Helvetica;
+  margin: 67px 0px 73px 94px;
+  font-size: 44px;
+  font-weight: 900;
+  color: #000000;
+}
+
+.filter-title {
+  margin: 0 0 23px 94px;
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  color: #192024;
+}
+
+.checkboxs {
+  margin: 0 0 65px 94px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkboxs input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+}
+
+label {
+  margin-right: 24px;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica;
+  color: #192024;
+  font-weight: normal;
+}
+
+.airline-section {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 16px;
+  padding-left: 94px;
+}
+
+@media (max-width: 1300px) {
+  .airline-section {
+    grid-template-columns: repeat(2, 300px);
+    text-align: center;
+  }
+}
+
+.single-airline {
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 -1px 4px 0px rgba(25, 32, 36, 0.04),
+    0 3px 6px 0 rgba(25, 32, 36, 0.16);
+}
+
+.single-airline:hover {
+  border: 1px solid #363f45;
+}
+
+.single-airline img {
+  width: 32px;
+  height: 32px;
+  margin-right: 18px;
+}
+
+.airline-name {
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  color: #192024;
+}
+
+.airLine-AllianceName,
+.airLine-siteName,
+.airLine-phon {
+  display: none;
+}
+
+.single-airline:hover .airLine-AllianceName,
+.single-airline:hover .airLine-phon,
+.single-airline:hover .airLine-siteName {
+  display: block;
+}
+
+.single-ariLin-InfoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.airLine-AllianceName {
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 14px;
+  font-weight: normal;
+  color: #192024;
+}
+
+.airLine-siteName,
+.airLine-phon {
+  word-wrap: break-word;
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 14px;
+  font-weight: normal;
+  color: #5a6872;
+}
